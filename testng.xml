@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PlayerControllerTest Suite" verbose="1" parallel="tests" thread-count="3">
+    <test name="PlayerControllerTest">
+        <classes>
+            <class name="PlayerControllerTest">
+                <methods>
+                    <include name="getPlayerTest"/>
+                    <include name="getPlayerNegativeTest"/>
+                    <include name="createPlayerTest"/>
+                    <include name="createPlayerNegativeAgeTest"/>
+                    <include name="createPlayerNegativeGenderLoginPasswordRoleScreenNameTest"/>
+                    <include name="deletePlayerTest"/>
+                    <include name="deleteNonExistingPlayerNegativeTest"/>
+                    <include name="updatePlayerTest"/>
+                    <include name="updateNonExistingPlayerNegativeTest"/>
+                    <include name="updateRoleTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
